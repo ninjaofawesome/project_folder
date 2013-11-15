@@ -1,0 +1,18 @@
+<h2>Exciting Sparrow Fact No. 4: Hygiene and Modesty </h2>
+
+<div style="clear: left;">
+    <p style="float: left;"><img src="http://www.thehindu.com/multimedia/dynamic/01391/12_YT_SPARROW_1391748f.jpg" height="200" width="200" border="3px"></p></div>
+   
+ <div style="text-align:center;height:300px;width:800px;"<h4><i>Bathing in public. Sparrows have no shame. Is this a rejection of puritanical attitudes towards nudity? Or are they just exhibitionists? A question for the philosophers.</i></h4>
+</div>
+
+<h3>Adding an image</h3>
+
+To insert an image into your page, use the img source tag like so:<br>
+
+&ltimg src="url" alt="some_text"&gt
+
+For example: to put an image of the sparrow on our page, we are using a link to an image we found online through hours of exhaustive Google image searching.<br>
+
+<h1>Behold the sparrow!</h1><br>
+ <img src="http://upload.wikimedia.org/wikipedia/commons/5/52/House_Sparrow,_England_-_May_09.jpg">

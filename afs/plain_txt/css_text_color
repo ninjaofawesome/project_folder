@@ -1,0 +1,57 @@
+CSS and Text/Color
+
+If HTML forms the foundation of a website, CSS gives your site the style.  Case in point, color and text styling with CSS.
+
+Any color aspect of any HTML document can be easily changed by using the color property followed by a semicolon and between two curly braces.  The three ways that color can be changed on a site is by using hexidecimal numbers, RGB (red, green, blue) values or color names. Here are some examples:
+
+To change the body text from the default white to black using hexidecimal numbers:
+
+body {
+	color: #000000;
+}
+
+To change the default black type color to white using RGB values:
+
+p {
+	color: rgb(255,0,0);
+}
+
+To change all the a tags to red using a color name:
+
+a {
+	color: red;
+}
+
+Color properties can be changed as an inline style for one specific element, as an internal style sheet for that specific HTML document, or (preferably) in an external style sheet where the color can permeate as much or as little of the site as one wishes.
+
+Similarly, any font in an HTML can be changed using CSS as well.  By default, HTML documents are styled with a web-safe serif font, which is important when considering how to style text.  Not every browser supports specific fonts declared in the CSS so it is important to have backup text options that every browser can render- which are known as web safe fonts.  (For a list of all the websafe fonts, check out <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">this W3C article</a>.)  The first font is usually what is rendered in the browser, followed by the next, and eventually a generic "serif" or "sans serif" option as the last resort.  There is no limit to the number of fonts listed!
+
+Here's an example of a a paragraph element styled with Arial.  If Arial is not available on that device, the second choice font would be comic sans, followed by verdana and then lastly a generic sans serif font.  They are defined as you can see here with the font-family property.
+
+p {
+	font-family: arial, comic sans, verdana, serif;
+}
+
+However, there are many options today that make the potential problem of a text not rendering in a browser a minor one.  One option is to use the <a href="http://www.google.com/fonts">Google Webfont API</a>, which provides 629 different fonts to choose from and gives easy to follow instructions for installing them.  
+
+Another (preferable) option for selecting and using fonts is by using the font face at-rule.  <a href="http://sixrevisions.com/css/font-face-guide/">Six revisions</a> has a wonderful primer on how to include this in any website, but like everything in web development this method can be simplified further.  Any font that is converted to a .ttf file (like on <a href="http://www.fontsquirrel.com/tools/webfont-generator">Font Squirrel</a>) is usually supported by most modern browsers.  However, it is still important to include other web-safe options when using this method, as not all browsers are up to date.
+
+Once the font is chosen and utilized, the designer can change the appearance of the font using the font-weight and font-style prorperties.  W3C has a great overview of all the options for <a href="http://www.w3schools.com/cssref/pr_font_weight.asp">font weight options</a> as well as <a href="http://www.w3schools.com/cssref/pr_font_font-style.asp">font style options</a>.
+
+Lastly, font size is limitless thanks to the font-size property. The default font size if not specified is 16 pixels tall (1 em), but can be easily specified to whatever the designer wants.  Font sizes can be rendered as absolutely sized using pixels (px) or relatively sized using ems.  Whenever possible, it is better to use relative fonts as they are more flexible.  
+
+Here's an example, using that same paragraph where the designer chose to use a double size font.
+
+Using pixels:
+
+p {
+	font-family: arial, comic sans, verdana, serif;
+	font-size: 32px;
+}
+
+Using ems:
+
+p {
+	font-family: arial, comic sans, verdana, serif;
+	font-size: 2em;
+}

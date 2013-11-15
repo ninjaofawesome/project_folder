@@ -1,0 +1,13 @@
+Adding content
+
+This text is in the &lt<body>&gt of the HTML. This is where we want to publish the majority of our content.  We want to tell people all about sparrows--how to identify them, how to avoid them, how to defeat them.
+Using a block quote, we highlight quotes from reputable sources on sparrows:
+&lt<blockquote>&gt"Sparrows cause global warming by radiating evil. This is a known fact, because it is a fact and I know it."  - Dr. Stephen Hawking&lt</blockquote>&gt
+
+	&lt<blockquote>&gt"Lies!" - Sparrows
+If we want to include a link other sparrow-related resources, we can use the <a href:> tag, like so.&lt</blockquote>&gt
+
+&lt<a href:"http://www.birdsource.org/gbbc/learning/trickyIDs/sparrows">&gt What's That Sparrow &lt</a>&gt
+____
+
+&lt;p&gt

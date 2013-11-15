@@ -1,0 +1,5 @@
+There are so many different sizes of browsers today, how will a web designer design to fit them all?  The answer is simple, and yet (can become) quite complex:  Responsive web design.  
+
+Responsive web design centers on a flexible grid and flexible images that provides an optimal viewing experience on any browser.  Both <a href ="http://en.wikipedia.org/wiki/Responsive_web_design">Wikipedia</a> and <a href="http://alistapart.com/article/responsive-web-design">A List Apart</a> have great definitions and explanations on what responsive website design is and can do, for further reading.
+
+Want to get up and running with responsive design faster?  There are frameworks which take out quite a bit of frustration for people new to responsive design.  Two of the more popular frameworks available today are <a href="http://foundation.zurb.com/">Foundation</a> (we recommend version 3 over 4) and <a href="http://getbootstrap.com/">Bootstrap</a>.  Although there are many to choose from, both Foundation and Bootstrap are used by countless websites and have great documentation to make it easy to go from static to fluid in no time flat.
