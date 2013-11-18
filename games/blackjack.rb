@@ -17,3 +17,20 @@
 ##Challenge
 #After successfully completing the previous game (there should be a commit with a working version of this game), 
 # alter the game so that a player can "hit" as many times as they want.
+
+
+
+
+class Deal
+	def initialize
+	@card = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+	@cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]	
+	end
+
+	def self.two_cards
+	puts "Lets play blackjack!  You'll be dealt two cards, then let me know if you want to hit or stay."
+	puts "your first card is @{card[rand(11)]}"
+	puts "your second card is @{cards[rand()]}"
+		
+	end
+end
