@@ -19,6 +19,10 @@ end#
 # it should return 'fizz' if the number is divisible by 3.
 # it should return 'buzz' if the number is divisible by 5.
 # it should retrun 'fizzbuzz' if the number is divisible by 3 or 5.
+
+# def fizzbuzz(number)
+
+
 def fizzbuzz
 [1..100].each do |number|
 	if number % 15 == 0
@@ -34,5 +38,5 @@ end
 
 end
 
-#Not sure if this would work, but given the time parameters given and that I got no errors in rspec, I'm going with it.
+#Not sure if this would work, but given the time parameters given and that I got no errors, I'm going with it.
 	
