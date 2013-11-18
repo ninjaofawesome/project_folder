@@ -26,15 +26,17 @@ puts "lets play blackjack.  I'll deal you two cards."
 card = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 	def self.initialize
-	#lists the regularly used variables in the game.	
+	@first = [rand(11)]	
+	@second = [rand(11)]	
 	end
 
 	def self.hand
+	puts "your first card is #{@first}.  Your second card is #{@second}."
+		if @first + @second <= 21 
+			puts "nice."
+		else 
+			puts "you gambled and lost!"
 	#goes through the action of dealing the hand of cards
-	end
-
-	def compare
-	#checks the number against 21
 	end
 
 	def self.hit_or_stay
@@ -48,7 +50,7 @@ card = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 end
 
 Blackjack
-#calls game of blackjack to start
+#calls game of blackjack to starts
 
 
 

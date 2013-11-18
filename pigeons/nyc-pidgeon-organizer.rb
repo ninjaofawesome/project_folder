@@ -23,6 +23,29 @@ pigeon_data = {
   }
 }
 
+new_pigeon = {}
+pigeon datea.each do |key, value|
+  # goes over the keys of color, gender and lives, puts out EVERYTHING in the values at this point.
+  value.each_pair do |attributes, name_array|
+  #goes over the attributes of each pigeon (eg Purple, female) and an array of names
+    name_array.each_do |name|
+      #theo
+      if new_pigeon[name].nil?
+        new_pigeon[name] = {}
+      end
+      #returns an empy hash unless one already exists, and then it skips over it.
+      new_pigeon[name][:color] = [] unless new_pigeon[name][:color]
+      #this is the same as the statement above, except in a "less positive" format.  If you've already added the color, skip it.
+      if key == :color
+        new_pigeon[name][key] << attribute
+      else
+        new_pigeon[name][key] = attribute
+      end
+
+    end
+
+  end
+end
 # Iterate over the hash above collecting each pigeon by name and insert it
 # as the key of a new hash where each name holds the attributes for that bird. 
 # Your output should match the hash below:
