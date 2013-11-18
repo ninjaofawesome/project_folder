@@ -19,24 +19,59 @@
 # alter the game so that a player can "hit" as many times as they want.
 
 
-class Deal
-		# Needs the hand to be dealt
-		puts "lets play blackjack.  Here are your cards."
-		@cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-		@card = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+class Blackjack
+#defines the container for Blackjack to be played
+puts "lets play blackjack.  I'll deal you two cards."
 
-		puts "your first card is #{@card[rand(11)]}"
-		puts "your second card is #{@cards[rand(11)]}"
+card = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
-		# needs the hand to be compared to 21
-		def self.compare
-			if 
-			@card + @ccards <= 21
-				puts "You may hit or stay up to two times in this game.  If you would like to hit, type hit.  If you would like to stay, type stay."
-			else
-				puts "You blew it."
-			end
-		end
+	def self.initialize
+	#lists the regularly used variables in the game.	
+	end
+
+	def self.hand
+	#goes through the action of dealing the hand of cards
+	end
+
+	def compare
+	#checks the number against 21
+	end
+
+	def self.hit_or_stay
+	#offers the option of hitting or staying up to two times
+	end
+
+	def check
+	#checks new number against old number.  If over 21, announces loss, if under 21 offers option to hit.
+	end
+
+end
+
+Blackjack
+#calls game of blackjack to start
+
+
+
+# class Deal
+# 		# Needs the hand to be dealt
+# 		puts "lets play blackjack.  Here are your cards."
+# 		@cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+# 		@card = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+# 		@reaction = 
+
+# 		puts "your first card is #{@card[rand(11)]}"
+# 		puts "your second card is #{@cards[rand(11)]}"
+
+# 		# needs the hand to be compared to 21
+# 		def self.compare
+# 			if 
+# 			@card + @ccards <= 21
+# 				puts "You may hit or stay up to two times in this game.  If you would like to hit, type hit.  If you would like to stay, type stay."
+# 				@reaction = gets.chomp
+# 			else
+# 				puts "You blew it."
+# 			end
+# 		end
 
 
 
@@ -44,7 +79,7 @@ class Deal
 	# needs the option to hit
 	# needs the option to stay
 	# needs the final option
-end
+# end
 
 
 # class Deal
