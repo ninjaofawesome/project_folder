@@ -31,7 +31,7 @@ class Deal
 		# needs the hand to be compared to 21
 		def self.compare
 			if 
-			@card + @cards <= 21
+			@card + @ccards <= 21
 				puts "You may hit or stay up to two times in this game.  If you would like to hit, type hit.  If you would like to stay, type stay."
 			else
 				puts "You blew it."
