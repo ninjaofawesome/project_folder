@@ -47,9 +47,17 @@ holiday_supplies[:spring][:easter] << "PEEEPS.... nom nom nom"
 5. Write a method to collect all Winter supplies from all the winter holidays.
 ex: `winter_suppliers(holiday_supplies) #=> ["Lights", "Wreath", etc]`
 
-
+holiday_supplies[:winter][:christmas][:new_years]
 
 6. Write a loop to list out all the supplies you have for each holiday and the season.
+
+holiday_supplies.each do |key, value|
+  puts key + ":"
+    value.each do |holiday, thing|
+      puts holiday + ":" + " " + thing
+    end
+  end
+end
 
 Output:
 ```
