@@ -24,7 +24,7 @@ pigeon_data = {
 }
 
 new_pigeon = {}
-pigeon datea.each do |key, value|
+pigeon data.each do |key, value|
   # goes over the keys of color, gender and lives, puts out EVERYTHING in the values at this point.
   value.each_pair do |attributes, name_array|
   #goes over the attributes of each pigeon (eg Purple, female) and an array of names
