@@ -19,41 +19,44 @@
 # alter the game so that a player can "hit" as many times as they want.
 
 
-class Blackjack
-#defines the container for Blackjack to be played
-puts "lets play blackjack.  I'll deal you two cards."
 
-card = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+#will come back to this if need be.
 
-	def self.initialize
-	@first = [rand(11)]	
-	@second = [rand(11)]	
-	end
+# class Blackjack
+# #defines the container for Blackjack to be played
+# puts "lets play blackjack.  I'll deal you two cards."
 
-	def self.hand
-	puts "your first card is #{@first}.  Your second card is #{@second}."
-		if @first + @second <= 21 
-			puts "nice."
-		else 
-			puts "you gambled and lost!"
-	#goes through the action of dealing the hand of cards
-	end
+# card = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
-	def self.hit_or_stay
-	#offers the option of hitting or staying up to two times
-	end
+# 	def self.initialize
+# 	@first = [rand(11)]	
+# 	@second = [rand(11)]	
+# 	end
 
-	def check
-	#checks new number against old number.  If over 21, announces loss, if under 21 offers option to hit.
-	end
+# 	def self.hand
+# 	puts "your first card is #{@first}.  Your second card is #{@second}."
+# 		if @first + @second <= 21 
+# 			puts "nice."
+# 		else 
+# 			puts "you gambled and lost!"
+# 	#goes through the action of dealing the hand of cards
+# 	end
 
-end
+# 	def self.hit_or_stay
+# 	#offers the option of hitting or staying up to two times
+# 	end
 
-Blackjack
+# 	def check
+# 	#checks new number against old number.  If over 21, announces loss, if under 21 offers option to hit.
+# 	end
+
+# end
+
+# Blackjack
 #calls game of blackjack to starts
 
 
-
+#doesn't really work, will start over.
 # class Deal
 # 		# Needs the hand to be dealt
 # 		puts "lets play blackjack.  Here are your cards."

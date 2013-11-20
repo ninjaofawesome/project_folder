@@ -101,6 +101,17 @@ array3.reverse
 
 # 11. sum all the numbers in the following array
 #   [11,4,7,8,9,100,134]
+
+# Did not get to this either, copied answer
+
+# sum = 0
+# array =  [11,4,7,8,9,100,134]
+# array each do |x|
+#   sum += x
+# end
+
+# Note: check out reduce
+
 # 12. Add an "s" to each word in the array except for the 2nd element in the array?
 #   ["hand","feet", "knee", "table"]
 # CHALLENGE
