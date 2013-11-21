@@ -1,17 +1,17 @@
-# def my_collect(array)
-# 	array.each do |number|
-# 		number * 2	
-# 	end
+def my_collect(array)
+	array.each do |number|
+		number * 2	
+	end
 
-# end
+end
 
-# my_collect([1, 2, 3, 4])
+my_collect([1, 2, 3, 4])
 
-# def my_collect(array)
-# puts array.collect {|number| number * 2}
-# end
+def my_collect(array)
+puts array.collect {|number| number * 2}
+end
 
-# my_collect([1, 2, 3, 4])
+my_collect([1, 2, 3, 4])
 
 def my_select(array)
 	array2 = []
@@ -23,11 +23,11 @@ def my_select(array)
 end
 my_select([1, 2, 3, 4])
 
-#  def my_select(array)
-# array.select {|number| number.even? }
-# end
+ def my_select(array)
+array.select {|number| number.even? }
+end
 
-# my_select([1, 2, 3, 4])
+my_select([1, 2, 3, 4])
 
 
 
