@@ -102,6 +102,19 @@ def full_price_items(cart, cost)
   #again, why put this here?
 end
 
+#the over 5 discount
+def over_five_discount(cart, cost)
+	over_five = false
+	#sets a a flag that the default setting is nothing over 5
+		cart.each do |item|
+		#go over each item in the cart, see if the condition is true
+			item.each do |name, attribute|
+				over_five = true if attribute[:price] > 5
+			end
+		end
+		over_5|| cost <= 10? cost : cost - 10
+	end
+
 # This is applying the coupons
 
 def coupon_items(cart, coupons)
