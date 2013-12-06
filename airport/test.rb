@@ -118,47 +118,57 @@ class Airport
 			puts "Were there other flights with this airline? (y/n)"
 				    answer = gets.chomp.downcase
 					while answer == "y"
+
 						puts "OK, we can keep going. In military hour format, what hour was the other flight supposed to arrive?"
 						hour = gets.chomp
-						puts "What minute? If on the hour, enter in '00'"
-						minute = gets.chomp
-						@started = hour + ":" + minute
-						@time_expectation=Time.parse(@started)
-						# debugger	
-							puts "In military hour format, when did that plane ACTUALLY arrive?"
-							arrival_hour = gets.chomp
 							puts "What minute? If on the hour, enter in '00'"
-							arrival_minute = gets.chomp
-							@arrived = arrival_hour + ":" + arrival_minute
-							# debugger
-							@arrived =Time.parse(@arrived)
-								eta = @time_expectation
-								arrival_time = @arrived
-								@more_flights = arrival_time - eta	
-							puts "Any more flights? (y/n)"
-								answer = gets.chomp.downcase			
+							minute = gets.chomp
+								@starter = hour + ":" + minute
+								@time_expected=Time.parse(@starter)
+								# debugger	
+									puts "In military hour format, when did that plane ACTUALLY arrive?"
+									arrival_hour = gets.chomp
+										puts "What minute? If on the hour, enter in '00'"
+										arrival_minute = gets.chomp
+											@got_in = arrival_hour + ":" + arrival_minute
+											# debugger
+											@got_in=Time.parse(@got_in)
+												eta = @time_expected
+												arrival_time = @got_in
+												@other_flight = arrival_time - eta	
+													puts "Any more flights? (y/n)"
+														answer = gets.chomp.downcase			
 					end
 						"Awesome.  Lets calculate the average times for those flights."
 	end
 
 	def final_number
-		if @more_flights == 0
+			if @other_flight == 0
 			@cache << 0
-		elsif @more_flights >= 1 && @more_flights <= 60 
-			minutes = @more_flights/60
+			# "Awesome, that flight was on time."
+		elsif @other_flight >= 1 && @other_flight <= 60 
+			minutes = @other_flight/60
 			@cache << minutes
-		else @more_flights >= 61 
-			minutes = @more_flights/60
+			# "That flight was #{minutes} minutes off schedule."
+		else @other_flight >= 61 
+			minutes = @other_flight/60
 			hours = minutes/60
 			@cache << hours
+			# "That flight was #{hours} hours off schedule."
 		end
 	
+	# end
+
+	def average
+		total_flights = @cache.count
+		sum_of_times = @cache.reduce(:+) 
+		magic_number = sum_of_times/total_flights
+		"Based on the information you gave, this airline is off schedule by #{magic_number} hours."      
 	end
 
 
-
 	
-
+end
 end
 
 plane = Airport.new
@@ -169,7 +179,8 @@ p plane.converter
 p plane.accumulator
 p plane.more
 p plane.get_even_more
-p plane.final number
+p plane.final_number
+p plane.average
 
 
 

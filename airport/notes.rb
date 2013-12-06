@@ -1,3 +1,16 @@
+####Persnickety final number if statement
+# if @more_flights == 0
+# 			@cache << 0
+# 		elsif @more_flights >= 1 && @more_flights <= 60 
+# 			minutes = @more_flights/60
+# 			@cache << minutes
+# 		else @more_flights >= 61 
+# 			minutes = @more_flights/60
+# 			hours = minutes/60
+# 			@cache << hours
+# 		end
+
+
 #####Prints out the hours and minutes only!
 # t = Time.now
 # p t.strftime("%I:%M%p")
