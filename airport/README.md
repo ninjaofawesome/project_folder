@@ -8,6 +8,10 @@ Airport helps solve that problem by calculating the average time that each fligh
 The program originated from the time_until_challenge.md and then taken to the next level. 
 
 This airport program has multiple versions, all which work.  They are:
-	1. THE SUPERNASTY AIRPORT VERSION (airport.rb): The behemoth of code.  This is a solid working piece of code, but there is much repetition involved.
-	2. THE LESS NASTY AIRPORT VERSION (military_airport.rb) Not only refactored, but refactored into MULTIPLE FILES!
+
+
+1. THE SUPERNASTY AIRPORT VERSION (airport.rb): The behemoth of code.  This is a solid working piece of code, but there is much repetition involved.
+
+
+2. THE LESS NASTY AIRPORT VERSION (military_airport.rb) Not only refactored, but refactored into MULTIPLE FILES!
 
