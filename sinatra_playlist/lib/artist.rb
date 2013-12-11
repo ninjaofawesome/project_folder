@@ -74,17 +74,17 @@ class Artist
 	# end
 
 
-	def salt_the_earth
-		p "Do you want to clear out your Music library? (y/n) WARNING: THIS CANNOT BE UNDONE."
-		answer = gets.chomp
-			if answer == "y"
-				@music_collection.clear
-				"Music library successfully deleted."
-			else answer == "n"
-				"Music library remains intact."
-			end
+	# def salt_the_earth
+	# 	p "Do you want to clear out your Music library? (y/n) WARNING: THIS CANNOT BE UNDONE."
+	# 	answer = gets.chomp
+	# 		if answer == "y"
+	# 			@music_collection.clear
+	# 			"Music library successfully deleted."
+	# 		else answer == "n"
+	# 			"Music library remains intact."
+	# 		end
 
-	end
+	# end
 
 
 

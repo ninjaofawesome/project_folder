@@ -34,8 +34,8 @@ module Playlist
 			@band_count = artist.band_count
 			@big_list = artist.big_list
 			@artist_count = artist.artist_count
-			@salt_the_earth = artist.salt_the_earth
-			erb :artists
+			# @salt_the_earth = artist.salt_the_earth
+			erb :artist
 		end
 
 

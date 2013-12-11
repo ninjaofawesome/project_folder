@@ -1,20 +1,79 @@
+<div class="container">
 
- <h1>Here's the information about the Artist</h1>
+<div class="row">
+	    <div class="col-xs-12 col-s-12 col-md-12">  
+			<h1 class = "extra_large">Here's the information about the Artists</h1>
+			<h2>So much information.</h2>
+		</div>
 
-<h2>All the Artists and bands</h2>
-<p> <%= @artist_output %></p>
+	<div class="clearfix visible-xs"></div>
+	<div class="clearfix visible-s"></div>
 
-<h2>How many Artists and bands?</h2>
-<p> <%= @band_count %></p>
+</div><!-- this is the end of the row  -->
 
-<h2>The Artists and their songs.</h2>
-<p> <%= @big_list %></p>
+<div class="row">
+	<div class="col-xs-3 col-s-3 col-md-3">
+			<h3 class = "gray bump">Which Artists belong to which Song?</h3>
+			<% @big_list.each do |item| %>
+				<ul>
+					<li class = "text"><b><%= item %></b></li>	
+				</ul>
+			<% end %>
+
+	<div class="clearfix visible-xs"></div>
+	<div class="clearfix visible-s"></div>
+		
+</div>
+
+
+<div class="row">
+	<div class="col-xs-3 col-s-3 col-md-3">
+		<h3 class ="gray bump">How many Artists are in this playlist?</h3>
+			<ul>
+				<li class = "text"><b><%= @band_count %></b></li>	
+			</ul>
+
+			<h3 class ="gray bump">Who are the Artists in this playlist?</h3>
+				<% @artist_output.each do |item| %>
+					<ul>
+						<li class = "text"><b><%= item %></b></li>	
+					</ul>
+				<% end %>
+
+	<div class="clearfix visible-xs"></div>
+	<div class="clearfix visible-s"></div>
+		
+</div>
+<div class="row">
+	<div class="col-xs-3 col-s-3 col-md-3">
+		
+			<h3 class = "gray bump">How many Songs does each Artist have?</h3>
+			<% @artist_count.each do |key,value| %>
+				<ul>
+					<li class = "text"><b><%= "#{key}: #{value}" %></b></li>
+				</ul>
+			<% end %>
+
+	<div class="clearfix visible-xs"></div>
+	<div class="clearfix visible-s"></div>
+		
+</div>
+
+
+
+
+
+
+</div><!-- this is the end of the row  -->
+
+</div> <!-- this is the end of the container  -->
+
+
+
 
  <h2>How many songs by each artist?</h2>
 <p> <%= @artist_count %></p>
 
-<h2>If you really want to destroy your music collection, click here.</h2>
-<a href = <%= @salt_the_earth %>>Click here</a>
 
 
 
