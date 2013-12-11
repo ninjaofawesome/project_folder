@@ -47,6 +47,10 @@ li.text {
 	text-align: justify;
 }
 
+li.bold {
+	font-weight: bold;
+}
+
 b.big {
 	font-size: 125%;
 }

@@ -1,17 +1,53 @@
-<h1>Here's the information about your genre</h1>
+<div class="container">
 
-<h2>The big list</h2>
-<p> <%= @genre_output %></p>
+<div class="row">
+	    <div class="col-xs-12 col-s-12 col-md-12">  
+			<h1 class = "extra_large">Here's the information about the Genres</h1>
+		</div>
 
-<h2>The more specific list</h2>
-<ul>
-<li> <%= @genre_dance %></li>
-<li> <%= @genre_electro %></li>
-<li> <%= @genre_indie %></li>
-<li> <%= @genre_folk %></li>
-<li> <%= @genre_country %></li>
-<li> <%= @genre_pop %></li>
-<li> <%= @genre_hiphop %></li>
-<li> <%= @genre_house %></li>
-<li> <%= @genre_rap %></li>
-</ul>
+	<div class="clearfix visible-xs"></div>
+	<div class="clearfix visible-s"></div>
+
+</div><!-- this is the end of the row  -->
+
+<div class="row">
+	<div class="col-xs-6 col-s-6 col-md-6">
+		<h3 class ="gray bump">What Songs belong to which genre?</h3>
+		<% @genre_output.each do |key,value| %>
+			<ul>
+				<li class = "text"><b><%= "#{key[:artist_and_title]}:" %></b> 
+									<%= "#{key[:genre]}" %></li>	
+			</ul>
+		<% end %>
+
+	<div class="clearfix visible-xs"></div>
+	<div class="clearfix visible-s"></div>
+		
+	</div>
+
+	<div class="col-xs-6 col-s-6 col-md-6">
+		<h3 class ="gray bump">What's the grand tally of Songs per Genre?</h3>
+				<ul>
+					<li class = "bold"> <%= @genre_dance %></li>
+					<li class = "bold"> <%= @genre_electro %></li>
+					<li class = "bold"> <%= @genre_indie %></li>
+					<li class = "bold"> <%= @genre_folk %></li>
+					<li class = "bold"> <%= @genre_country %></li>
+					<li class = "bold"> <%= @genre_pop %></li>
+					<li class = "bold"> <%= @genre_hiphop %></li>
+					<li class = "bold"> <%= @genre_house %></li>
+					<li class = "bold"> <%= @genre_rap %></li>
+				</ul>
+
+	<div class="clearfix visible-xs"></div>
+	<div class="clearfix visible-s"></div>
+		
+	</div>
+
+
+</div><!-- this is the end of the row  -->
+
+</div> <!-- this is the end of the container  -->
+
+
+
