@@ -7,8 +7,9 @@ module Playlist
 	class Playlister < Sinatra::Application
 		
 		get '/song' do
-			song = Song.new(Dir.new("/Users/hannahnordgren/documents/project_folder/sinatra_playlist/public/data").entries)
-			@output = song.organize_music
+			@song = Song.new(Dir.new("/Users/hannahnordgren/documents/project_folder/sinatra_playlist/public/data").entries)
+			@output = @song.organize_music
+
 			erb :song
 		end 
 
@@ -34,7 +35,7 @@ module Playlist
 			@big_list = artist.big_list
 			@artist_count = artist.artist_count
 			@salt_the_earth = artist.salt_the_earth
-			erb :artist
+			erb :artists
 		end
 
 

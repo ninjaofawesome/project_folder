@@ -1,0 +1,52 @@
+/*######GENERAL######*/
+
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "bebas neue", Helvetica, Arial, sans-serif; 
+}
+
+/*#####FONTS######*/
+
+@font-face {
+    font-family: "bebas neue";
+    src: url('/fonts/bebasneue-webfont.ttf');
+}
+
+
+/*###HEADERS####*/
+
+h1.extra_large {
+	font-weight: bolder;
+	font-size: 500%;
+}
+
+h1.gray, h2.gray, h3.gray, h4.gray, h5.gray, h6.gray {
+	color: #666;
+}
+
+h1.bump, h2.bump, h3.bump, h4.bump, h5.bump, h6.bump {
+	padding-left: 5px;
+}
+
+/*####LISTS#####*/
+
+ul {
+	margin-bottom: 0;
+	list-style-type: none;
+}
+
+li.text {
+	text-align: justify;
+}
+
+b.big {
+	font-size: 125%;
+}

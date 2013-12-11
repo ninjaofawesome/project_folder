@@ -14,6 +14,7 @@ class Song
 			entry = /(.*) \- (.*) \[([\w\-]*)\]\.(\w+)$/.match(track)
 			next unless entry
 			 music << { :artist => entry[1], :title => entry[2], :genre => entry[3], :format => entry[4],} 
+			# p music
 		end
 		music
 	end
