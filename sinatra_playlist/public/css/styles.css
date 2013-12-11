@@ -54,3 +54,11 @@ li.bold {
 b.big {
 	font-size: 125%;
 }
+
+/*######ROWS######*/
+
+.overflow
+{
+height:600px;
+overflow:scroll;
+}

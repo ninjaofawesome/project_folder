@@ -2,7 +2,7 @@
 
 <div class="row">
 	    <div class="col-xs-12 col-s-12 col-md-12">  
-			<h1 class = "extra_large">Here's the information about the Artists</h1>
+			<h1 class = "extra_large">Here's the information about your Artists</h1>
 			<h2>So much information.</h2>
 		</div>
 
@@ -11,28 +11,36 @@
 
 </div><!-- this is the end of the row  -->
 
+
+<div class="row">
+	    <div class="col-xs-12 col-s-12 col-md-12"> <h3 class ="gray bump">How many Artists are in this playlist?</h3>
+			<ul>
+				<li class = "text"><b><%= @band_count %></b></li>	
+			</ul>
+	<div class="clearfix visible-xs"></div>
+	<div class="clearfix visible-s"></div>
+</center>
+</div><!-- this is the end of the row  -->
+
 <div class="row">
 	<div class="col-xs-3 col-s-3 col-md-3">
+		<div class = "overflow">
 			<h3 class = "gray bump">Which Artists belong to which Song?</h3>
 			<% @big_list.each do |item| %>
-				<ul>
+				<ul class>
 					<li class = "text"><b><%= item %></b></li>	
 				</ul>
 			<% end %>
 
 	<div class="clearfix visible-xs"></div>
 	<div class="clearfix visible-s"></div>
-		
+	</div>
 </div>
 
 
 <div class="row">
 	<div class="col-xs-3 col-s-3 col-md-3">
-		<h3 class ="gray bump">How many Artists are in this playlist?</h3>
-			<ul>
-				<li class = "text"><b><%= @band_count %></b></li>	
-			</ul>
-
+		<div class = "overflow">
 			<h3 class ="gray bump">Who are the Artists in this playlist?</h3>
 				<% @artist_output.each do |item| %>
 					<ul>
@@ -43,10 +51,12 @@
 	<div class="clearfix visible-xs"></div>
 	<div class="clearfix visible-s"></div>
 		
+	</div>	
 </div>
+
 <div class="row">
 	<div class="col-xs-3 col-s-3 col-md-3">
-		
+		<div class = "overflow">
 			<h3 class = "gray bump">How many Songs does each Artist have?</h3>
 			<% @artist_count.each do |key,value| %>
 				<ul>
@@ -57,22 +67,12 @@
 	<div class="clearfix visible-xs"></div>
 	<div class="clearfix visible-s"></div>
 		
-</div>
-
-
-
-
-
-
+		</div>
+	</div>
 </div><!-- this is the end of the row  -->
 
 </div> <!-- this is the end of the container  -->
 
-
-
-
- <h2>How many songs by each artist?</h2>
-<p> <%= @artist_count %></p>
 
 
 

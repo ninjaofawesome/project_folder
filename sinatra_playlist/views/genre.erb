@@ -2,7 +2,7 @@
 
 <div class="row">
 	    <div class="col-xs-12 col-s-12 col-md-12">  
-			<h1 class = "extra_large">Here's the information about the Genres</h1>
+			<h1 class = "extra_large">Here's the information about your Genres</h1>
 		</div>
 
 	<div class="clearfix visible-xs"></div>
@@ -12,6 +12,7 @@
 
 <div class="row">
 	<div class="col-xs-6 col-s-6 col-md-6">
+		<div class = "overflow">
 		<h3 class ="gray bump">What Songs belong to which genre?</h3>
 		<% @genre_output.each do |key,value| %>
 			<ul>
@@ -24,6 +25,7 @@
 	<div class="clearfix visible-s"></div>
 		
 	</div>
+</div>
 
 	<div class="col-xs-6 col-s-6 col-md-6">
 		<h3 class ="gray bump">What's the grand tally of Songs per Genre?</h3>
