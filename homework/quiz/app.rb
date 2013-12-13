@@ -1,22 +1,35 @@
 require 'bundler'
 Bundler.require
 
+Dir["./lib/*"].each {|file| require file }
+
 module Quiz
 	class Take_quiz < Sinatra::Application
 
 		get '/' do
+		 
+
 		  erb :multichoice
 		end
 
-		# get'/image' do
-		# 	erb :imagechoice
-		# end
+		get '/east_coast' do
+			erb :east_coast
+		end
+
+		get '/west_coast' do
+			erb :west_coast
+		end
 
 		post '/results' do
-			# results = Extrapolation.new({"lifestyle_prefs"=>{"0"=>"true", "1"=>"false", "2"=>"true", "3"=>"false", "4"=>"true"}, "temperament"=>{"0"=>"true", "1"=>"true", "2"=>"true", "3"=>"false", "4"=>"false"}})
-			# @answer = results.get_results
+			 answers = Extrapolation.new(params)
+			 answers.get_results
+			
 
-			erb :results
+			 if answers.west_coast < 5
+			 	erb :east_coast
+			 else
+			 	erb :west_coast
+			 end
 		end
 
 	

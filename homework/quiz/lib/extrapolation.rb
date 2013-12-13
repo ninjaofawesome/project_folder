@@ -2,10 +2,10 @@
 
 class Extrapolation
 
-	attr_accessor :get_results
+	attr_accessor :get_results,:west_coast
 
-	def initialize(choices)
-		@choices = choices
+	def initialize(params)
+		@choices = params
 		@east_coast = []
 		@west_coast = []
 	end
@@ -64,23 +64,8 @@ class Extrapolation
 	end
 
 	def west_coast
-		answer = @west_coast.count
-			if answer < 5 
-				"You're an east coaster"
-			end
+		@west_coast.count		
 	end
-
-	def east_coast
-		answer = @east_coast.count
-			if answer < 5
-				"You're a west coaster"
-			end
-	end
-	
 
 end
 
-results = Extrapolation.new({"lifestyle_prefs"=>{"0"=>"true", "1"=>"false", "2"=>"true", "3"=>"false", "4"=>"true"}, "temperament"=>{"0"=>"true", "1"=>"true", "2"=>"true", "3"=>"false", "4"=>"false"}})
-p results.get_results
-p results.west_coast
-p results.east_coast

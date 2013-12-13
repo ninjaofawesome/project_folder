@@ -1,10 +1,45 @@
 
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  background-color: #ffffff;
+}
 
-/*#####type######*/
+/*#######styling#######*/
+
+.underline {
+	border-bottom: double;
+	padding-bottom: 1px;
+}
+
+/*#####fonts######*/
+
+@font-face {
+    font-family: "libertine light";
+    src: url('fonts/LinLibertine_R.ttf');
+}
+
+@font-face {
+    font-family: "libertine heavy";
+    src: url('fonts/LinLibertine_RB.ttf');
+}
+
+p { 
+	font-family: "libertine light", Georgia, Times New Roman, Serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "libertine heavy", Georgia, Times New Roman, Serif;
+
+}
 
 h1.extra_large, h2.extra_large, h3.extra_large, h4.extra_large, h5.extra_large, h6.extra_large {
-	font-size: 300%;
+	font-size: 400%;
 	font-weight: bolder;
+	
 }
 
 .bold {
@@ -12,13 +47,33 @@ h1.extra_large, h2.extra_large, h3.extra_large, h4.extra_large, h5.extra_large, 
 	padding-top: 10px;
 }
 
+.bold_underline {
+	font-weight: bold;
+	padding-top: 10px;
+	border-bottom: double;
+}
+
 /*#######Buttons#######*/
 
 .space {
-	margin-top: 10px;
+	margin-top: 40px;
+	background-color: #fff;
+	border: none;
+	font-family: "libertine heavy", Georgia, Times New Roman, Serif;
+	font-size: 125%;
+	font-weight: bolder;
 }
 
 .more_space {
 	margin-top: 25px;
 }
+
+/*######spacing######*/
+
+p.results {
+	max-width: 400px;
+	margin: 10px 0;
+} 
+
+
 
