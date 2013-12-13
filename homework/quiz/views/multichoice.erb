@@ -1,0 +1,84 @@
+<div class = "container">
+	<form action="/results" method="POST">
+
+	<div class = "row">
+		<div class = "col-md-12">
+			<center>
+				<h1 class ="extra_large">Where Should I live?</h1>
+					<h3>Not sure if you're east coast or west coast?  Take this quiz and find out your best fit</h3>
+			</center>
+		</div>
+	</div>
+
+	<div class = "row">
+		<div class = "col-md-6">
+			<h2>Part One: Lifestyle Preferences</h2>
+				<p>Answer each option as honestly as possible.</p>
+
+			<h3>"In the last year, I have...</h3>
+
+				<p class = "bold">..eaten tofu, seitan, tempeh (alone or in conjunction) on purpose."</p>	
+				  <input type="radio" id="lifestyle" name="lifestyle_prefs[0]" value="true">True</input>
+				  <input type="radio" id="lifestyle" name="lifestyle_prefs[0]" value="false">False</input>
+
+				<p class = "bold">..have jaywalked or crossed against a traffic light."</p>	
+				  <input type="radio" id="lifestyle" name="lifestyle_prefs[1]" value="true">True</input>
+				  <input type="radio" id="lifestyle" name="lifestyle_prefs[1]" value="false">False</input>
+
+				 <p class = "bold">..have been to and/or fought someone at a sample sale."</p>	
+				  <input type="radio" id="lifestyle" name="lifestyle_prefs[2]" value="true">True</input>
+				  <input type="radio" id="lifestyle" name="lifestyle_prefs[2]" value="false">False</input>
+
+				  <p class = "bold">..have had my aura read or know someone who has."</p>	
+				  <input type="radio" id="lifestyle" name="lifestyle_prefs[3]" value="true">True</input>
+				  <input type="radio" id="lifestyle" name="lifestyle_prefs[3]" value="false">False</input>
+
+				  <p class = "bold">..taken public transportation."</p>	
+				  <input type="radio" id="lifestyle" name="lifestyle_prefs[4]" value="true">True</input>
+				  <input type="radio" id="lifestyle" name="lifestyle_prefs[4]" value="false">False</input>
+
+		</div>
+
+		<div class = "col-md-6">
+			<h2>Temperament Barometer</h2>
+
+			<p class = "bold">When you say "Lets hang out!" What you're really meaning is:</p> 
+				  <select id="temperament" name="temperament[0]" />
+				    <option value="true">"Let's hang out!"</option>
+				    <option value="false">"Lets NOT hang out!"</option>
+				    <option value="true">"I'll hang out as long as I'm in a 10 block radius."</option>
+				  </select>
+
+			<p class = "bold">When on your last day of vacation, you think:</p> 
+				  <select id="temperament" name="temperament[1]" />
+				    <option value="true">"I'll sleep on the plane."</option>
+				    <option value="false">"I better get in a quick nap before."</option>
+				  </select>	
+
+			<p class = "bold">You're going to a formal event.  You wear:</p> 
+				  <select id="temperament" name="temperament[2]" />
+				    <option value="true">A tuxedo.</option>
+				    <option value="false">A Canadian tuxedo.</option>
+				  </select>	
+
+			<p class = "bold">Your stance on tent camping:</p> 
+				  <select id="temperament" name="temperament[3]" />
+				  	<option value="false">I'm practically REI's spokesperson.</option>
+				    <option value="true">No.</option> 
+				  </select>	
+
+			<p class = "bold">Four distinct seasons:</p> 
+				  <select id="temperament" name="temperament[4]" />
+				  	<option value="false">Freaks you out.</option>
+				    <option value="true">Is normal.</option>  
+				  </select>	
+
+				 <br /> 
+
+			 <button class = "space" type="submit" value="next">NEXT</button>
+		
+		</div>
+	
+	</div>
+
+</div><!--this closes the container -->

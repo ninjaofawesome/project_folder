@@ -1,0 +1,24 @@
+
+
+/*#####type######*/
+
+h1.extra_large, h2.extra_large, h3.extra_large, h4.extra_large, h5.extra_large, h6.extra_large {
+	font-size: 300%;
+	font-weight: bolder;
+}
+
+.bold {
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+/*#######Buttons#######*/
+
+.space {
+	margin-top: 10px;
+}
+
+.more_space {
+	margin-top: 25px;
+}
+
