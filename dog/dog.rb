@@ -35,6 +35,14 @@ class Dog
         ")
   end
 
+#obviously, this doesn't work.
+  # def new_from_db
+  #   self.db.query("
+  #    insert into dogs(name, color, id)
+  #     values ('#{name}', '#{color}', '#{id}')
+  #       ")
+  # end
+
   def update
     self.db.query ("
       update dogs
@@ -92,8 +100,10 @@ class Dog
 end
 
 dog = Dog.new("grayish green", "Zoul", 3000)
+dog = Dog.new("boo", "black", 10)
 # p dog
 dog.insert
+dog.new_from_db
 dog.update
 dog.delete 
 dog.find
