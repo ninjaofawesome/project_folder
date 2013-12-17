@@ -6,9 +6,10 @@ class Dog
   
   @@db = Mysql2::Client.new(:host => "localhost", :username => "root", :database => "dogs")
 
-  def initialize(color, name)
+  def initialize(color, name, id)
     @color = color
     @name = name
+    @id = id
   end
 
   def self.db
@@ -19,10 +20,18 @@ class Dog
     @@db
   end
 
+   def update_table
+    self.db.query ("
+     alter table dogs
+     add column 
+     id integer;
+      ")
+  end
+
   def insert
     self.db.query ("
-      insert into dogs(color, name)
-      values ('#{color}', '#{name}')
+      insert into dogs(name, color, id)
+      values ('#{name}', '#{color}', #{id})
         ")
   end
 
@@ -43,6 +52,15 @@ class Dog
 
 #this isn't exactly right, but it should work TECHNICALLY, right?
 
+  def find
+    self.db.query("
+      select * 
+      from dogs
+      ")
+  end
+
+
+
   def find_by_color
     self.db.query("
       select * 
@@ -59,19 +77,30 @@ class Dog
       ")
   end
 
+   def find_by_id
+    self.db.query("
+      select * 
+      from dogs
+      group by id
+      ")
+  end
+
+
+ 
+
+
 end
 
-dog = Dog.new("Blue and Rust", "Rupert")
+dog = Dog.new("grayish green", "Zoul", 3000)
 # p dog
 dog.insert
 dog.update
 dog.delete 
-# p dog.find
+dog.find
 dog.find_by_color
 dog.find_by_name
 
-
-  # find
+# dog.update_table
 
 
 
