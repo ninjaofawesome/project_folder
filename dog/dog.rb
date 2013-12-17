@@ -41,21 +41,23 @@ class Dog
       ")
   end
 
-  # def find
-  #   self.db.query ("
-  #     select * 
-  #     from dogs
-  #     where name = #{"name"}
-  #     ")
-  # end
+#this isn't exactly right, but it should work TECHNICALLY, right?
 
-  # def find_by_attribute(color)
-  #   db.query("
-  #     select * 
-  #     from dogs
-  #     where color = '#{color}'
-  #     ")
-  # end
+  def find_by_color
+    self.db.query("
+      select * 
+      from dogs
+      group by color
+      ")
+  end
+
+  def find_by_name
+    self.db.query("
+      select * 
+      from dogs
+      group by name
+      ")
+  end
 
 end
 
@@ -65,11 +67,10 @@ dog.insert
 dog.update
 dog.delete 
 # p dog.find
-# dog.find_by_attribute
+dog.find_by_color
+dog.find_by_name
 
 
-  #
-  # find_by_att
   # find
 
 
